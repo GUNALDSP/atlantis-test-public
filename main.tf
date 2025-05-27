@@ -19,8 +19,4 @@ resource "null_resource" "second" {
   }
 }
 
-resource "null_resource" "second" {
-  provisioner "local-exec" {
-    command = "echo Atlantis test resource"
-  }
-}
+
