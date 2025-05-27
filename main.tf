@@ -18,3 +18,9 @@ resource "null_resource" "second" {
     command = "echo This is another test"
   }
 }
+
+resource "null_resource" "second" {
+  provisioner "local-exec" {
+    command = "echo Atlantis test resource"
+  }
+}
