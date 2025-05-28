@@ -19,9 +19,5 @@ resource "null_resource" "second" {
   }
 }
 
-resource "null_resource" "third" {
-  provisioner "local-exec" {
-    command = "echo This is a new test from Atlantis"
-  }
-}
+
 
