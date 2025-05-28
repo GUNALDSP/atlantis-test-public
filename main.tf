@@ -19,4 +19,10 @@ resource "null_resource" "second" {
   }
 }
 
+resource "null_resource" "second" {
+  provisioner "local-exec" {
+    command = "echo This is another test"
+  }
+}
+
 
